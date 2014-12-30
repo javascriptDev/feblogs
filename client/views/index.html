@@ -1,0 +1,42 @@
+{{include './public/header'}}
+
+<div class="header">
+	<div class="title"></div>
+	<div class="search">
+		<input>
+		<button class="query">搜索</button>
+	</div>
+
+</div>
+
+<aside class="left">
+	{{each list}}
+	<div class="item">
+		<div class="i-title">
+			{{$value.title}}
+		</div>
+		<div class="i-date">
+			{{$value.date}}
+		</div>
+	</div>
+	{{/each}}
+</aside>
+<article class="content">
+	<hgroup class="a-head">
+		<h1> {{data.title}}
+		</h1>
+
+		<h3>
+			作者:{{data.author}}
+		</h3>
+
+		<h4>
+			{{data.date}}
+		</h4>
+	</hgroup>
+	<section>
+		<div class="a">asdasdasdasda</div><div class="b">asdasdasdasda</div>
+	</section>
+
+</article>
+{{include './public/footer'}}

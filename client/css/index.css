@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0px 30px;
+  height: 100%;
+}
+.header {
+  height: 120px;
+  width: 100%;
+  background: silver;
+}
+.header .title {
+  height: 70px;
+}
+.header .search {
+  height: 48px;
+  text-align: center;
+}
+.left {
+  float: left;
+  width: 25%;
+  height: 0px;
+  overflow-y: scroll;
+}
+.left .item {
+  width: 45%;
+  float: left;
+  box-sizing: border-box;
+  border: 1px solid silver;
+  border-radius: 5px;
+  padding: 10px 10px;
+  word-break: break-all;
+  margin-top: 5px;
+}
+.left .item:nth-child(even) {
+  margin-left: 5px;
+}
+.left .item .i-title {
+  height: 55px;
+}
+.left .item .i-date {
+  text-align: right;
+  margin-top: 15px;
+  font-size: 12px;
+}
+.content {
+  float: right;
+  width: 75%;
+}
+.content .a-head h1,
+.content .a-head h2,
+.content .a-head h3,
+.content .a-head h4 {
+  width: 100%;
+  display: inline-block;
+  margin-top: 5px;
+}
+.content .a-head h1 {
+  text-align: center;
+}
+.content .a-head h2,
+.content .a-head h3,
+.content .a-head h4 {
+  text-align: right;
+}
+.footer {
+  height: 20px;
+  width: 100%;
+  text-align: center;
+}
