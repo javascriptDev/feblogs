@@ -15,4 +15,12 @@ function layout() {
     content.height(h);
 }
 
+function initEvent() {
+    $('.content').delegate('.item', 'click', function () {
+        
+    })
+}
+
+initEvent();
+
 layout();
