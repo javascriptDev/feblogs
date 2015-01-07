@@ -14,6 +14,7 @@ var db = require('./dbOperation');
 
 
 template.config('extname', '.html');
+template.config('escape', true);
 app.engine('.html', template.__express);
 app.set('view engine', 'html');
 
@@ -56,6 +57,9 @@ app
                     },
                     {
                         src: 'js/index/index.js'
+                    },
+                    {
+                        src: 'js/tpl.js'
                     }
                 ],
                 style: [
@@ -64,6 +68,9 @@ app
                     },
                     {
                         src: 'css/a.css'
+                    },
+                    {
+                        src:'css/ani.css'
                     }
                 ]
             };

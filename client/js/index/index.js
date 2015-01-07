@@ -16,11 +16,17 @@ function layout() {
 }
 
 function initEvent() {
-    $('.content').delegate('.item', 'click', function () {
-        
+    var c = $('.content');
+    var list = $('.left');
+    list.delegate('.item', 'click', function () {
+
+//        var html = '<hgroup class="a-head"> <h1>asdas</h1><h3>作者:addison </h3><h4>' +
+//            new Date() +
+//            '</h4></hgroup><section>asdasdada</section>';
+//        c.html(html);
+        c.addClass('openDownRightOut');
     })
 }
 
 initEvent();
-
 layout();

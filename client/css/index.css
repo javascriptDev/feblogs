@@ -48,6 +48,7 @@ body {
 .content {
   float: right;
   width: 75%;
+  background: cornflowerblue;
 }
 .content .a-head h1,
 .content .a-head h2,
