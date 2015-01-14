@@ -8,15 +8,17 @@
 	</div>
 
 </div>
-
 <aside class="left">
 	{{each list}}
-	<div class="item">
+	<div class="item" data-index="{{$index}}">
 		<div class="i-title">
 			{{$value.title}}
 		</div>
 		<div class="i-date">
 			{{$value.date}}
+		</div>
+		<div id="{{$index}}" class="i-content" style="display: none">
+			{{$value.content}}
 		</div>
 	</div>
 	{{/each}}
@@ -37,7 +39,5 @@
 	<section>
 		{{data.content}}
 	</section>
-
 </article>
-
 {{include './public/footer'}}

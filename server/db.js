@@ -17,7 +17,8 @@ function setup(db) {
         title: String,
         uid: String,
         content: String,
-        type: String
+        type: String,
+        author:String
     });
 
 }
